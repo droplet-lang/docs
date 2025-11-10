@@ -1,5 +1,5 @@
-import {themes as prismThemes} from 'prism-react-renderer';
-import type {Config} from '@docusaurus/types';
+import { themes as prismThemes } from 'prism-react-renderer';
+import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 // Docusaurus configuration
@@ -19,8 +19,8 @@ const config: Config = {
   organizationName: 'droplet-lang',      // GitHub username/org
   projectName: 'docs',                   // Repo name
   deploymentBranch: 'gh-pages',
-  trailingSlash:false,
-  onBrokenLinks: 'throw',
+  trailingSlash: false,
+  onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'warn',
 
   i18n: {
@@ -75,7 +75,7 @@ const config: Config = {
           items: [
             {
               label: 'Tutorial',
-              to: '/docs/intro',
+              to: '/docs/',
             },
           ],
         },
