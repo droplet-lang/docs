@@ -17,9 +17,9 @@ const config: Config = {
   url: 'https://droplet-lang.github.io', // GitHub Pages base URL
   baseUrl: '/docs/',                     // Repo name as path
   organizationName: 'droplet-lang',      // GitHub username/org
-  projectName: 'lang',                   // Repo name
+  projectName: 'docs',                   // Repo name
   deploymentBranch: 'gh-pages',
-
+  trailingSlash:false,
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
