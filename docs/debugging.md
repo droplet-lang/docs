@@ -10,6 +10,24 @@ The debugger is built directly into the **Droplet Virtual Machine (VM)** and is 
 
 ---
 
+## Running in Debug Mode
+
+To start your program under the debugger, use the `debug` command:
+
+```bash
+droplet debug <file.drp>
+````
+
+Example:
+
+```bash
+droplet debug main.drp
+```
+
+This launches your program in **debug mode**, automatically attaching the interactive debugger.
+
+---
+
 ## Starting the Debugger
 
 The debugger automatically attaches when your program is executed in **debug mode** or when a runtime breakpoint or error occurs.
@@ -17,11 +35,9 @@ The debugger automatically attaches when your program is executed in **debug mod
 When started, you’ll see:
 
 ```
-
 Debugger started. Type 'help' for available commands.
 (droplet-db)
-
-````
+```
 
 You can now enter commands to control execution or inspect state.
 
@@ -29,14 +45,14 @@ You can now enter commands to control execution or inspect state.
 
 ## Execution Control Commands
 
-| Command | Alias | Description |
-|----------|--------|-------------|
-| `step` | `s` | Step to the next **source line** (into function calls). |
-| `next` | `n` | Step to the next **source line**, skipping over function calls. |
-| `stepi` | `si` | Step one **instruction** (low-level). |
-| `finish` | `fin` | Continue until the **current function returns**. |
-| `continue` | `c` | Resume execution until a breakpoint or program end. |
-| `quit` | `q` | Exit the debugger. |
+| Command    | Alias | Description                                                     |
+| ---------- | ----- | --------------------------------------------------------------- |
+| `step`     | `s`   | Step to the next **source line** (into function calls).         |
+| `next`     | `n`   | Step to the next **source line**, skipping over function calls. |
+| `stepi`    | `si`  | Step one **instruction** (low-level).                           |
+| `finish`   | `fin` | Continue until the **current function returns**.                |
+| `continue` | `c`   | Resume execution until a breakpoint or program end.             |
+| `quit`     | `q`   | Exit the debugger.                                              |
 
 > Press **Enter** with no input to repeat the last `step` or `next` command.
 
@@ -50,7 +66,7 @@ Breakpoints allow you to **pause execution** at specific lines in the source.
 
 ```bash
 break <file>:<line>
-````
+```
 
 Example:
 
